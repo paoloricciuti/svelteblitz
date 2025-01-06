@@ -9,6 +9,10 @@
 	import { get_key_bind } from './shortcuts-utilities';
 	import { fuzzy_search_command } from './fuzzy_search';
 
+	// from tinykeys: https://github.com/jamiebuilds/tinykeys/blob/fcf253635231925d660fd6699c9a783ecd038faf/src/tinykeys.ts#L61C1-L62C57
+	let PLATFORM = typeof navigator === 'object' ? navigator.platform : '';
+	let APPLE_DEVICE = /Mac|iPod|iPhone|iPad/.test(PLATFORM);
+
 	export let commands = [] as Command[];
 
 	let search = '';
@@ -132,14 +136,14 @@
 		key_binds[
 			get_key_bind({
 				mod: ['$mod'],
-				keys: ['KeyP'],
+				keys: ['p'],
 			})
 		] = open_file_palette;
 
 		key_binds[
 			get_key_bind({
 				mod: ['$mod'],
-				keys: ['KeyE'],
+				keys: ['e'],
 			})
 		] = open_file_palette;
 
@@ -162,14 +166,14 @@
 		key_binds[
 			get_key_bind({
 				mod: ['$mod', 'Shift'],
-				keys: ['KeyP'],
+				keys: ['p'],
 			})
 		] = open_command_palette;
 
 		key_binds[
 			get_key_bind({
 				mod: ['$mod'],
-				keys: ['KeyK'],
+				keys: ['k'],
 			})
 		] = open_command_palette;
 
@@ -309,7 +313,11 @@
 										<li>
 											{#each sequence as kbd}
 												<kbd>
-													{kbd.startsWith('Key') ? kbd.slice(3) : kbd}
+													{#if kbd === 'Meta'}
+														{APPLE_DEVICE ? '⌘' : 'Ctrl'}
+													{:else}
+														{kbd.startsWith('Key') ? kbd.slice(3) : kbd}
+													{/if}
 												</kbd>
 											{/each}
 										</li>
