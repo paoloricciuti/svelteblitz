@@ -34,7 +34,7 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
-		"publint": "^0.2.8",
+		"publint": "^0.3.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"svelte-sequential-preprocessor": "^2.0.1",
