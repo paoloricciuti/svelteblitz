@@ -59,7 +59,7 @@
 		"pocketbase": "^0.21.5",
 		"semver": "^7.6.3",
 		"svelte-splitpanes": "^8.0.9",
-		"tinykeys": "^2.1.0",
+		"tinykeys": "^3.0.0",
 		"uuid": "^10.0.0",
 		"zod": "^3.24.1"
 	},
