@@ -43,7 +43,7 @@
 		"@neocodemirror/svelte": "^0.0.18",
 		"@replit/codemirror-lang-svelte": "^6.0.0",
 		"@replit/codemirror-vim": "^6.2.1",
-		"@sveltejs/site-kit": "^3.4.0",
+		"@sveltejs/site-kit": "^5.0.0",
 		"@webcontainer/api": "^1.5.1",
 		"@xterm/addon-fit": "^0.10.0",
 		"@xterm/xterm": "^5.5.0",
