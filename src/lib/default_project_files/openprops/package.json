@@ -25,6 +25,6 @@
 	},
 	"dependencies": {
 		"open-props": "^1.5.10",
-		"postcss-preset-env": "^9.0.0"
+		"postcss-preset-env": "^10.0.0"
 	}
 }
