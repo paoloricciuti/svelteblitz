@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@builder.io/partytown':
         specifier: ^0.10.2
-        version: 0.10.2
+        version: 0.10.3
       '@codemirror/autocomplete':
         specifier: ^6.18.3
         version: 6.18.4
@@ -250,8 +250,8 @@ packages:
   '@antfu/utils@0.7.10':
     resolution: {integrity: sha512-+562v9k4aI80m1+VuMHehNJWLOFjBnXn3tdOitzD0il5b7smkSBal4+a3oKiQTbrwMmN/TBUMDvbdoWDehgOww==}
 
-  '@builder.io/partytown@0.10.2':
-    resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
+  '@builder.io/partytown@0.10.3':
+    resolution: {integrity: sha512-N2SWA3c5vEad3rgdAFM3zMb6uc7aXqibkgAz4ijvYzycgQXJ4dE5oH6fGFMXSQWj6ayVlLT1/CmpflYUJHfmQg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -2590,7 +2590,7 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@builder.io/partytown@0.10.2': {}
+  '@builder.io/partytown@0.10.3': {}
 
   '@codemirror/autocomplete@6.18.4':
     dependencies:
